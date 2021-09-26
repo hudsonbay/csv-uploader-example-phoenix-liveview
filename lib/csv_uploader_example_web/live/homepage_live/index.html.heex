@@ -7,4 +7,26 @@
 <section class="row">
     <%= live_component DataComponent, id: :data %>
     <%= live_component SelectorComponent, id: :selector %>
+    <article class="column">
+      <h2>Selector</h2>
+
+      <%= for entry <- @uploads.csv.entries do %>
+        <div>
+          <%= entry.part_number %>
+            <div>
+              <a href="#" phx-click="cancel" phx-value-ref="{entry.ref}">&times</a>
+            </div>
+
+            <div class="progress blue" style="height: 20px; color: white;">
+              <div class="determinate" style="width: {entry.progress}%">Completed <%= entry.progress %>%</div>
+            </div>
+        </div>
+      <% end %>
+
+      <form id="upload-form" phx-submit="save" phx-change="validate">
+        <%= live_file_input @uploads.csv %>
+        <button type="submit">Upload</button>
+      </form>
+
+    </article>
 </section>
