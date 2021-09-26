@@ -56,7 +56,7 @@ config :csv_uploader_example, CsvUploaderExampleWeb.Endpoint,
 config :csv_uploader_example, CsvUploaderExampleWeb.Endpoint,
   live_reload: [
     patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
+      ~r"priv/static/[^uploads].*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/csv_uploader_example_web/(live|views)/.*(ex)$",
       ~r"lib/csv_uploader_example_web/templates/.*(eex)$"
