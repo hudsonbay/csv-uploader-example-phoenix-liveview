@@ -3,28 +3,26 @@ defmodule DataComponent do
 
   def render(assigns) do
     ~H"""
-    <article class="column">
-      <h2>Data</h2>
-
-      <table class="table table-striped table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">PART_NUMBER</th>
-            <th scope="col">BRANCH_ID</th>
-            <th scope="col">PART_PRICE</th>
-            <th scope="col">SHORT_DESC</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">7344357</th>
-            <td>1</td>
-            <td>98.00</td>
-            <td>GALV x FAB x 0121F00548 x 16093 x .026 x 29.88 x 17.56</td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
+    <div class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink">
+          <table class="table-auto border border-collapse">
+            <thead>
+              <tr>
+                <th class="border-2 border-black-600">PART NUMBER</th>
+                <th class="border-2">BRANCH ID</th>
+                <th class="border-2">PART PRICE</th>
+                <th class="border-2">SHORT DESC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-emerald-200">
+                <td class="border">7344357</td>
+                <td class="border">1</td>
+                <td class="border">98.00</td>
+                <td class="border">GALV x FAB x 0121F00548 x 16093 x .026 x 29.88 x 17.56</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
     """
   end
 end
