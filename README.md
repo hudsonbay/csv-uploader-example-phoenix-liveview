@@ -25,6 +25,10 @@ Here is some help to understand the CSV structure:
 **PART_PRICE** = price in USD
 **SHORT_DESC** = short description text about the product
 
+## Concepts:
+- Live components
+- Live uploads
+
 ---
 
 To start your Phoenix server:
