@@ -21,7 +21,12 @@ defmodule CsvUploaderExample.BranchesTest do
     end
 
     test "create_branch/1 with valid data creates a branch" do
-      valid_attrs = %{branch_id: "some branch_id", part_number: "some part_number", part_price: "120.5", short_desc: "some short_desc"}
+      valid_attrs = %{
+        branch_id: "some branch_id",
+        part_number: "some part_number",
+        part_price: "120.5",
+        short_desc: "some short_desc"
+      }
 
       assert {:ok, %Branch{} = branch} = Branches.create_branch(valid_attrs)
       assert branch.branch_id == "some branch_id"
@@ -36,7 +41,13 @@ defmodule CsvUploaderExample.BranchesTest do
 
     test "update_branch/2 with valid data updates the branch" do
       branch = branch_fixture()
-      update_attrs = %{branch_id: "some updated branch_id", part_number: "some updated part_number", part_price: "456.7", short_desc: "some updated short_desc"}
+
+      update_attrs = %{
+        branch_id: "some updated branch_id",
+        part_number: "some updated part_number",
+        part_price: "456.7",
+        short_desc: "some updated short_desc"
+      }
 
       assert {:ok, %Branch{} = branch} = Branches.update_branch(branch, update_attrs)
       assert branch.branch_id == "some updated branch_id"
