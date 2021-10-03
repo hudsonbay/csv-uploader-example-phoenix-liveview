@@ -1,4 +1,4 @@
-# CSV uploader example
+![](screenshot.png)
 
 This is a Phoenix LiveView application which demonstrates how to handle CSV file uploads.
 
@@ -31,6 +31,8 @@ Here is some help to understand the CSV structure:
 - Live components
 - Live uploads
 - CSV decoding
+- Database CRUDS
+- Map manipulations
 
 * * *
 
