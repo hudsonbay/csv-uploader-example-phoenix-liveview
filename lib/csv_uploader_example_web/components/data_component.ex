@@ -14,12 +14,14 @@ defmodule DataComponent do
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-emerald-200">
-                <td class="border">7344357</td>
-                <td class="border">1</td>
-                <td class="border">98.00</td>
-                <td class="border">GALV x FAB x 0121F00548 x 16093 x .026 x 29.88 x 17.56</td>
-              </tr>
+            <%= for branch <- @branches do %>
+            <tr class="bg-emerald-200">
+              <td class="border"><%= branch.part_number %></td>
+              <td class="border"><%= branch.branch_id %></td>
+              <td class="border"><%= branch.part_price %></td>
+              <td class="border"><%= branch.short_desc %></td>
+            </tr>
+            <% end %>
             </tbody>
           </table>
     </div>
