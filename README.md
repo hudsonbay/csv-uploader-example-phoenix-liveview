@@ -13,8 +13,6 @@ This projects models the scenario of a **product import via file upload**.
 
 As an user, you should be able to upload a CSV to import products into the database (*postgres*). This data will then be shown in a list.
 
-The upload will work multiple times and always update the corresponding products.
-
 Lines in the CSV represent steel products.
 
 An example CSV is in the repo.
