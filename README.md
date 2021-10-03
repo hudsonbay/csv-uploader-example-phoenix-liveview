@@ -20,15 +20,17 @@ Lines in the CSV represent steel products.
 An example CSV is in the repo.
 
 Here is some help to understand the CSV structure:
-**PART_NUMBER** = identifier for a product
-**BRANCH_ID** = which branch produces the product (TUC = tucson, CIN = cincinnati)
-**PART_PRICE** = price in USD
-**SHORT_DESC** = short description text about the product
+
+- **PART_NUMBER** = identifier for a product
+- **BRANCH_ID** = which branch produces the product (TUC = tucson, CIN = cincinnati)
+- **PART_PRICE** = price in USD
+- **SHORT_DESC** = short description text about the product
 
 ## Concepts:
 
 - Live components
 - Live uploads
+- CSV decoding
 
 * * *
 
@@ -39,3 +41,5 @@ To start your Phoenix server:
 - Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+***
