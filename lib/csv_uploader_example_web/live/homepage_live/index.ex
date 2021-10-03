@@ -23,7 +23,7 @@ defmodule CsvUploaderExampleWeb.HomepageLive.Index do
       Repo.insert_all(Branch, contents)
     end)
 
-    {:noreply, socket}
+    {:noreply, assign(socket, branches: Branches.list_branches())}
   end
 
   @impl Phoenix.LiveView
