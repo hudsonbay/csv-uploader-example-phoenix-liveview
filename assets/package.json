@@ -1,0 +1,20 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  },
+  "devDependencies": {
+    "postcss-import": "^14.0.2"
+  },
+  "scripts": {
+    "deploy": "NODE_ENV=production tailwindcss --postcss --minify --input=css/app.css --output=../priv/static/assets/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
