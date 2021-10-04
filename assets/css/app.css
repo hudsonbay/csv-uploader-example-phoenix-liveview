@@ -1,2 +1,5 @@
-/* This file is for your main application CSS */
-@import "./tailwind.css";
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
